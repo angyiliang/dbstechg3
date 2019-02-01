@@ -31,6 +31,7 @@ function showCredit(){
 }
 
 function showHistory(){
+  
     var x = document.getElementById("showHistory");
   if (x.style.display === "none") {
     x.style.display = "block";
