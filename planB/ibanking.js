@@ -42,12 +42,14 @@ function showCredit() {
 
 function showHistory() {
     tabs_content.forEach((element)=>{
-   
         var x = document.getElementById(element);
         if (element=="showHistory") {
             x.style.display = "block";
         } else {
+            
+            alert(mydata)
             x.style.display = "none";
+           
         } 
     });
     console.log("history")
