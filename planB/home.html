@@ -48,107 +48,12 @@
                 <button class="navbar-brand" onclick="showDeposits()" style="color:white"><label id="title">INBOX</label></button>
             </div>
 
-            <div class="navbar-default sidebar disease-sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse nav-disease" id="nav-disease">
-                    <ul class="nav" id="side-menu">
-                        <li class="side_list">
-                            <button type="button" id="infect-btn" class="disease-btn active" onclick="document.location.href='home.html';"><label class="box-text">Infectious
-                                Disease</label></button>
-                                <label>
-                            <select id="cmbCompare" class="disease-btn box-text">
-                                <option selected disabled hidden>Comparison</option>
-                                <option value="weather">Weather</option>
-                                <option value="holidays">Holidays</option>
-                            </select>
-                        </label>
-                        </li>
-                        <div align="center"><label class="names"><u>Settings</u></label></div>
-                        <li id="disease-panel" class="side_list"><label class="names">Disease:</label>
-                            <div class="btn-group">
-                                <button type="button" class="btn disease-dropdown dropdown-toggle" data-toggle="dropdown">Select
-                                    Diseases<span class="caret"></span></button>
-                                <ul class="dropdown-menu scrollable-menu" role="menu">
-                                    <input type="text" placeholder="Search.." id="disease-search" onkeyup="search_disease()">
-                                    <div id="all-disease" class="select-disease">
-                                        <div class="all-disease">
-                                            <input type="checkbox" id="all-disease-checkbox" class="select-disease default_check"> All Diseases
-                                            <button id="main_collapse" class="collapse-buttons" data-toggle="collapse"
-                                                data-target="#disease-data"></button>
-                                        </div>
-                                        
-                                        <div id="disease-data" class="collapse in">
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                        </li>
-                        <li id="hierarchy-panel" class="side_list"><label class="names">Hierarchy:</label>
-                            <div class="btn-group-toggle" data-toggle="buttons">
-                                <label class="names btn btn-secondary default_check active">
-                                    <input type="radio" name="hierarchy" class="hierarchy default_hierarchy" checked="checked"
-                                        value="all">All</label>
-                                <label class="names btn btn-secondary">
-                                    <input type="radio" name="hierarchy" class="hierarchy" value="category">Category</label>
-                                <label class="names btn btn-secondary">
-                                    <input type="radio" name="hierarchy" class="hierarchy" value="individual">Individual</label>
-                            </div>
-                        </li>
-                        <li id="period-panel" class="side_list">
-                            <p>
-                                <label for="amount" class="names">Period:</label>
-                                <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                            </p>
-
-                            <div id="slider-range"></div>
-                            <br>
-                            <div class="months-control">
-                                <label for="startDate" class="names">Start:</label>
-                                <input name="startDate" id="startDate" class="date-picker" size="5" disabled />
-                                <label for="endDate" class="names">End:</label>
-                                <input name="endDate" id="endDate" class="date-picker" size="5" disabled /></br>
-                                <label id="dateWarning" hidden></label>
-                                <div class="show-months names">
-                                    <input name="showMonths" id="showmonths" type="checkbox" onchange="checkEnabled()" /><label
-                                        for "showmonths">Show Months</label>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="visualisation-panel" class="side_list">
-                            <label class="names">Visualisation:</label>
-                            <div id="visualbtns">
-                                <div class="dvisual-btns">
-                                    <button class="default-visual vdactive" id="line" type=submit onclick="lineClick()"></button>
-                                    <div class="visual-dividers"></div>
-                                    <button class="default-visual" id="arrow" type=submit onclick="arrowClick()"></button>
-                                </div>
-                                <div class="cvisual-btns">
-                                    <button class="calendar-visual vcactive" id="holiday" type=submit onclick="holClick()"></button>
-                                    <div class="visual-dividers"></div>
-                                    <button class="calendar-visual" id="calendar" type=submit onclick="calClick()"></button>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="weather-panel" class="side_list">
-                            <label id="weather" class="names">Weather: </label>
-                            <div id="weather-radios">
-                                <button class = "weather-visual vwactive" id="rain" type="submit" onclick="rainClick()"></button>
-                                <div class = "visual-dividers"></div>
-                                <button class = "weather-visual" id="temperature" type="submit" onclick="tempClick()"></button>
-                               
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </nav>
 
     </div>
     <!-- /.row -->
     <!-- /#wrapper -->
-    <div class="graph_display" id="graph-container">
-        <div id="childrendiv"></div>
 
-    </div>
 
     <div class="main_content">
 
