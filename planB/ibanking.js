@@ -45,10 +45,9 @@ function showHistory() {
         var x = document.getElementById(element);
         if (element=="showHistory") {
             x.style.display = "block";
-        } else {
-            
-            alert(mydata)
+        } else {    
             x.style.display = "none";
+            
            
         } 
     });
@@ -86,5 +85,13 @@ $( document ).ready(function() {
         $("#credit").text("$"+json['outstandingAmount'])
 
     });
-    
+
+    $.getJSON("./data/transaction.json", function(json) {
+      $.each(json, function(i, data){
+          console.log(json)
+        $("#history").append("$"+ "<tr><td>" + json['date'] + "</td><td>" + json['type']+ "</td></tr>" + json['referenceNumber']+ "</td></tr>" + json['amount']+ "</td></tr>")
+      },
+
+  )})
+
 });
