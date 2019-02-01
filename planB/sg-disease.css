@@ -1,0 +1,284 @@
+#infect-btn{
+    font-size : 100%;
+    width: 50%;
+    white-space: nowrap;
+    text-align: center;
+    padding:10px
+}
+.ui-datepicker-calendar {
+    display: none;
+    }
+
+.disease-sidebar{
+    margin-left: 10px;
+    height: 260%
+}
+
+.cat-container:hover{
+    padding: 5px 5px;
+    color: black;
+    background-color: rgb(9, 189, 147);
+}
+
+.all-disease:hover{
+    padding: 5px 5px;
+    color: black;
+    background-color: rgb(19, 151, 120);
+}
+
+
+.child-li:hover{
+    padding: 5px 5px;
+    color: black;
+    background-color: rgb(168, 236, 220);
+}
+
+#disease-search{
+    border: solid #1AAB8A;
+    background-position: 14px 12px;
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-left: 5px;
+}
+
+.all-disease{
+    padding: 5px 5px;
+}
+
+.cat-container{
+    padding: 5px 5px;
+}
+
+.child-li{
+    padding: 5px 5px;
+}
+
+.show-months label{
+    font-size: 10px
+}
+
+.select-disease{
+    margin-left: 5px;
+}
+
+.names{
+    color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    
+    -webkit-text-stroke-color: black;
+    font-size: 130%;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.btn-secondary{
+    background-color: lightgray
+}
+
+.btn-secondary:hover{
+    background-color: #1AAB8A
+}
+
+.nav-disease{
+    z-index: -1;
+    border: 10px solid black;
+    width: 320px;
+    height: 500%;
+    margin-left: -10px;
+    background-color: white
+}
+
+.navbar{
+    /* background: linear-gradient(to right, lightblue,blue); */
+    background-color: #1AAB8A
+}
+
+.box-text{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#title {
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.nav{
+    margin:10px;
+}
+
+.date-picker{
+    position:relative;
+    z-index: 9999;
+}
+
+#dateWarning{
+    color: red;
+    font-size: 60%
+}
+
+.weather-visual#rain{
+    background-image : url(./Images/rain.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+.weather-visual#temperature{
+    background-image : url(./Images/temperature.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+
+
+.default-visual#line{
+    background-image : url(./Images/line-128.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+.default-visual#arrow{
+    background-image : url(./Images/arrow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+.calendar-visual#calendar{
+    background-image: url(./Images/calendar-7-128.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+.weather#rainfall{
+    background-image: url(./Images/rain.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+.calendar-visual#holiday{
+    background-image: url(./Images/cal_line.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2.5em 2.5em;
+    position: center;
+    background-size: 80%
+}
+
+.collapse-buttons{
+    background-image: url(./Images/collapse.png);
+    background-size:200%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: center;
+    padding:5px 5px;
+    border:none;
+    vertical-align:middle
+}
+
+.dvisual-btns, .cvisual-btns{
+    padding-left: 50px
+}
+
+
+.visual-dividers{
+    width: 10px;
+    height: auto;
+    display:inline-block;
+}
+
+#weather-radios{
+    padding-left: 50px
+}
+
+#weather-panel{
+    display:none
+}
+
+.cvisual-btns{
+    display:none
+}
+
+.disease-btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    height:40px
+}
+
+.disease-dropdown:hover{
+    background-color: #1AAB8A;
+    color:white;
+}
+.disease-dropdown{
+    width: 120%;
+    font-size: 15px;
+}
+
+.active, .disease-btn:hover {
+    background-color: #1AAB8A;
+    color: white;
+}
+
+.vdactive, .default-visual:hover {
+    background-color: #1AAB8A;
+    color: white;
+}
+
+.vcactive, .calendar-visual:hover {
+    background-color: #1AAB8A;
+    color: white;
+}
+
+.vwactive, .weather-visual:hover{
+    background-color: #1AAB8A;
+    color: white;
+}
+
+#side-menu{
+    width:280px;
+    height: 40em;
+    justify-content: space-around
+}
+
+.side_list{
+    vertical-align: center;
+    padding-bottom: 21px;
+    padding-top: 21px;
+    list-style-type: none;
+}
+
+.dropdown-menu{
+    overflow-y:scroll;
+    z-index: 10000;
+    width: 400%;
+    height: 400px;
+}
+
+
+.graph_display{
+    padding-left: 350px;
+    width: 120%;
+    height: 120%;
+}
+
+#amount{
+    width: 30%;
+    text-align: center
+}
+

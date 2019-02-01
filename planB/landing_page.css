@@ -1,0 +1,118 @@
+body,html{
+  height:100%;
+  margin:0;
+}
+
+.background-img{
+  background: url("/Images/petri_dish.jpg") no-repeat center;
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.title {
+  margin: auto;
+  width: 78%;
+  padding: 10px;
+  
+}
+
+.description {
+  margin: auto;
+  width: 78%;
+  height:57%;
+  padding-left: 10px;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+  font-size: 20px;
+  font-family: 'Georgia';
+  line-height: 1.5
+}
+
+h {
+  font-family: 'Georgia', cursive;
+  color: white;
+  text-align: center;
+  font-size: 450%;
+  display: flex;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  background: #1AAB8A;
+  color: #fff;
+  border: 1px solid black;
+  position: relative;
+  font-size: 200%;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin: 0 auto;
+  margin-top:10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+
+button:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
