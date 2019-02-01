@@ -76,7 +76,8 @@ $( document ).ready(function() {
         
         console.log(json)
         $("#savings").text("$"+json['availableBalance'])
-
+        $("#balance").text("$"+json['availableBalance'])
+        $("#savingAccount").text(json['accountNumber'])
     });
 
     $.getJSON("./data/credit_106.json", function(json) {
@@ -94,4 +95,11 @@ $( document ).ready(function() {
 
   )})
 
+    $.getJSON("./data/marketing_msg.json", function(json) {
+        
+        console.log(json)
+        $("#marketmsg").text("Ads: " + json['body'])
+
+    });
+    
 });
