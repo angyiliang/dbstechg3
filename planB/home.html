@@ -41,13 +41,12 @@
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
                 
-                <button class="navbar-brand" onclick="showSummary()" style="color:white"><label id="title">SUMMARY</label></button>
-                <button class="navbar-brand" onclick="showDeposits()" style="color:white"><label id="title">DEPOSITS</label></button>
-                <button class="navbar-brand" onclick="showCredit()" style="color:white"><label id="title">CREDIT ACCS</label></button>
-                <button class="navbar-brand" onclick="showDeposits()" style="color:white"><label id="title">HISTORY</label></button>
-                <button class="navbar-brand" onclick="showDeposits()" style="color:white"><label id="title">INBOX</label></button>
+                <button class="navbar-brand" onclick="showSummary()" ><label id="title">SUMMARY</label></button>
+                <button class="navbar-brand" onclick="showSavings()" ><label id="title">DEPOSITS</label></button>
+                <button class="navbar-brand" onclick="showCredit()" ><label id="title">CREDIT ACCS</label></button>
+                <button class="navbar-brand" onclick="showHistory()" ><label id="title">HISTORY</label></button>
+                <button class="navbar-brand" onclick="showInbox()" ><label id="title">INBOX</label></button>
             </div>
-
         </nav>
 
     </div>
@@ -55,10 +54,26 @@
     <!-- /#wrapper -->
 
 
-    <div class="main_content">
-
+    <div id="showSummary">
+summary
     </div>
 
+    
+    <div id="showSavings" style="display: none;">
+savings
+    </div>
+    
+    <div id="showCredit" style="display: none;">
+credit
+    </div>
+    
+    <div id="showHistory" style="display: none;">
+history
+    </div>
+    
+    <div id="showInbox" style="display: none;"s>
+inbox
+    </div>
 
     <!--required scripts-->
     
@@ -75,7 +90,7 @@
     <script src="./line_diagram.js"></script>
     <script src="./school_holiday.js"></script>
     <script src="./holiday_calendar.js"></script>
-    <script src="./sg-disease.js"></script>
+    <script src="./ibanking.js"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
