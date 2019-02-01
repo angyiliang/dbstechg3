@@ -1,0 +1,31 @@
+@import 'variables';
+
+.app {
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+}
+
+html, body {
+   min-height: 100%;
+}
+
+// Panel content
+.panel-content {
+   h1, h2 {
+      &:first-child {
+         margin-top: 0;
+      }
+   }
+}
+
+// 576px, small devices
+@media (min-width: 36em) {
+   .panel-content {
+      margin-top: 2rem;
+   }
+}
+
+@import "module";
+@import "forms";
+@import "pagination";
+@import "components/UI/Buttons/style";

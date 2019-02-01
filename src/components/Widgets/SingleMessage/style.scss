@@ -1,0 +1,80 @@
+@import 'components/App/variables';
+
+.message {
+   max-width: 36.5rem;
+   padding-top: 0;
+   padding-bottom: 0;
+
+   > * {
+      margin-left: 0;
+      margin-right: 0;
+   }
+}
+
+// Message header
+.message-header {
+   border-bottom: .1rem solid rgba(0, 0, 0, 0.03);
+   padding: 3.5rem 2.5rem;
+   margin-bottom: 3.5rem;
+
+   h3 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 0 0 3.5rem;
+   }
+}
+
+.message-sender-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   img {
+      border-radius: 50%;
+      max-width: 8.2rem;
+      margin-bottom: 1.4rem;
+   }
+
+   div {
+      display: flex;
+      flex-direction: column;
+   }
+
+   span, strong {
+      font-size: 1.2rem;
+   }
+
+   span {
+      color: #c9d4eb;
+   }
+
+   strong {
+      color: $light-blue;
+   }
+}
+
+.message article {
+   color: $light-blue;
+   font-size: 1.2rem;
+   font-weight: 700;
+
+   padding: 0 2.5rem;
+   margin-bottom: 3.5rem;
+}
+
+// 360px
+@media (min-width: 22.5em) {
+   .message-header h3 {
+      text-align: left;
+   }
+
+   .message-sender-info {
+      flex-direction: row;
+
+      img {
+         margin-right: 2.3rem;
+         margin-bottom: 0;
+         max-width: 4.1rem;
+      }
+   }
+}

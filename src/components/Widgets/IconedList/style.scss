@@ -1,0 +1,77 @@
+@import 'components/App/variables';
+@import 'components/App/mixins';
+
+.iconed-list {
+   max-width: 36.5rem;
+   padding-top: 0;
+   padding-bottom: 0;
+
+   ul {
+      @include reset-ul();
+   }
+
+   li {
+      border-bottom: .1rem solid #e1e9fd;
+
+      &:last-child {
+         border: 0;
+      }
+
+      & > * {
+         display: flex;
+         flex-direction: column;
+         padding: 1.6rem 1.8rem;
+      }
+
+      & > a { text-decoration: none; }
+
+      & > a:hover {
+         background-image: linear-gradient(to right, $light-blue 0%, $dark-blue 100%);
+
+         span, strong {
+            color: #fff;
+         }
+      }
+   }
+
+   // List title/subtitle
+
+   .list-title, .list-subtitle {
+      font-size: 1.4rem;
+   }
+
+   .list-title {
+      color: $light-blue;
+
+      strong {
+         color: $dark-blue;
+      }
+   }
+
+   .list-subtitle {
+      color: #c9d4eb;
+   }
+}
+
+// 360px
+@media (min-width: 22.5em) {
+   .iconed-list {
+      li {
+         background: url('list-icon-image.svg') 3rem no-repeat;
+
+         > * {
+            padding: 2.4rem 1.8rem 2.4rem 8rem;
+         }
+      }
+
+      // List types
+
+      .list-type-image {
+         background-image: url('list-icon-image.svg');
+      }
+      
+      .list-type-comment {
+         background-image: url('list-icon-comment.svg');
+      }
+   }
+}

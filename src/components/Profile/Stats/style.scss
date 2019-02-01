@@ -1,0 +1,47 @@
+@import 'components/App/variables';
+
+.profile-stats {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+
+   div {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 2rem;
+   }
+
+   strong, span {
+      display: block;
+   }
+
+   strong {
+      font-size: 1.8rem;
+   }
+
+   span {
+      font-size: 1.4rem;
+      color: $light-gray;
+   }
+}
+
+// Stats colors
+
+.stats-green strong { color: $light-green; }
+.stats-blue strong { color: $dark-blue; }
+.stats-red strong { color: $pink; }
+
+// 360px
+@media (min-width: 22.5em) {
+   .profile-stats {
+      margin-bottom: 3.2rem;
+      flex-direction: row;
+
+      div {
+         margin-bottom: 0;
+      }
+   }
+}

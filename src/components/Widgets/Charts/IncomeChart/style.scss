@@ -1,0 +1,24 @@
+@import 'components/App/variables';
+
+.income-chart-container {
+   height: 23rem;
+}
+
+// 500px
+@media (min-width: 31.25em) {
+   .income-chart-container {
+      height: 28rem;
+   }
+}
+
+@media (min-width: $screen-md-min) {
+   .income-chart-container {
+      height: 32rem;
+   }
+}
+
+@media (min-width: $screen-lg-min) {
+   .income-chart-container {
+      height: 37.5rem;
+   }
+}

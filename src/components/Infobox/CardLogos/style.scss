@@ -1,0 +1,14 @@
+@import 'components/App/variables';
+
+// Card company info
+
+.card-logos {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3.5rem;
+
+   img:first-child {
+      margin-right: 1rem;
+   }
+}

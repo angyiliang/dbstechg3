@@ -1,0 +1,62 @@
+@import 'components/App/variables';
+
+// Card details
+
+.card-details {
+   span {
+      opacity: 0.3;
+      color: #ffffff;
+      font-size: 1.2rem;
+   }
+
+   p {
+      color: #ffffff;
+      font-size: 1.4rem;
+      border-bottom: .1rem solid rgba(255,255,255,0.3);
+      margin-bottom: 0;
+      padding-bottom: .4rem;
+
+      &.big {
+         font-size: 2.4rem;
+      }
+   }
+}
+
+// Card details rows
+
+.card-details-row {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+   &:first-child {
+      margin-bottom: 2rem;
+   }
+
+   > div {
+      width: 100%;
+   }
+}
+
+.card-details-row-1-2 {
+   div {
+      flex-basis: 100%;
+      margin-bottom: 1.2rem;
+   }
+}
+
+// 360px
+@media (min-width: 22.5em) {
+   .card-details-row:first-child {
+      margin-bottom: 4rem;
+   }
+
+   .card-details-row-1-2 {
+      flex-direction: row;
+
+      div {
+         flex-basis: 45%;
+         margin-bottom: 0;
+      }
+   }
+}
