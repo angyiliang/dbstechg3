@@ -65,3 +65,24 @@ function showInbox() {
     });
     console.log("inbox")
 }
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+
+    // show the savings data
+    $.getJSON("./data/saving_december.json", function(json) {
+        
+        console.log(json)
+        $("#savings").text("$"+json['availableBalance'])
+
+    });
+
+    $.getJSON("./data/credit_106.json", function(json) {
+        
+        console.log(json)
+        $("#credit").text("$"+json['outstandingAmount'])
+
+    });
+    
+});

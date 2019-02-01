@@ -1,0 +1,16 @@
+[{
+    "accountId": 106,
+    "outstandingAmount": "1322.80",
+    "datePayable": "2019-01-26T00:00:00.000+0000",
+    "currency": "S$",
+    "displayName": "VISA Platinum",
+    "cardNumber": "1234-2345-3456-4567"
+},{
+    "accountId": 206,
+    "outstandingAmount": "0.00",
+    "datePayable": null,
+    "currency": "S$",
+    "displayName": "DBS Altitude Visa Signature Card",
+    "cardNumber": "1111-2222-3333-4444"
+}
+]

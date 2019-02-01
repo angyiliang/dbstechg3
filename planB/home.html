@@ -20,7 +20,7 @@
     <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!--HCI CSS FILE-->
-    <link href="./sg-disease.css" rel="stylesheet" type="text/css">
+    <link href="./core.css" rel="stylesheet" type="text/css">
     <link href="./ibanking.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -37,13 +37,11 @@
 <body>
 
     <div id="wrapper">
-
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-
                 <button class="navbar-brand" onclick="showSummary()"><label id="title">SUMMARY</label></button>
-                <button class="navbar-brand" onclick="showSavings()"><label id="title">DEPOSITS</label></button>
+                <button class="navbar-brand" onclick="showSavings()"><label id="title">SAVINGS</label></button>
                 <button class="navbar-brand" onclick="showCredit()"><label id="title">CREDIT ACCS</label></button>
                 <button class="navbar-brand" onclick="showHistory()"><label id="title">HISTORY</label></button>
                 <button class="navbar-brand" onclick="showInbox()"><label id="title">INBOX</label></button>
@@ -55,7 +53,7 @@
 
 
     <div id="showSummary">
-        Summary
+        <h3>Summary</h3>
         <div class="panel panel-default">
             <div class="panel-body" id="marketmsg">
                 Marketing Messages
@@ -65,28 +63,41 @@
         <div class="panel panel-default">
             <div class="panel-body">
                 <centre>
-                    <h1>Savings</h1>
-                    <h1 id="savings"></h1>
+                    <h1>Savings: </h1> <h1 id="savings"></h1>
                     <br>
-                    <h1>Credit:</h1>
-                    <h1 id="credit"></h1>
+                    <h1>Credit (Outstanding Amount):</h1><h1 id="credit"></h1>
                 </centre>
             </div>
         </div>
         <div class="panel panel-default">
-            <div class="panel-body">
-
+            <div class="panel-body" id="summaryTable">
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Account Type</th>
+                    </tr>
+                </table>
             </div>
         </div>
-
-
     </div>
 
 
     <div id="showSavings" style="display: none;">
-        savings
-    </div>
+        <h3>Savings</h3>
+        <div class="panel panel-default">
+            <div class="panel-body" id="marketmsg">
+                Marketing Messages
+            </div>
 
+        </div>
+
+        <div id="savingsTable">
+            
+        </div>
+         
+    </div>
 
     <div id="showCredit" style="display: none;">
         <p></p>
@@ -497,7 +508,6 @@
 
 
 
-
     </div>
 
     <div id="showInbox" style="display: none;" s>
@@ -512,13 +522,7 @@
     <script src="./lib/moment.js"></script>
     <script src="./lib/d3.v5.min.js"></script>
 
-    <!-- HCI JavaScript-->
-    <script src="./rainfall.js"></script>
-    <script src="./temperature.js"></script>
-    <script src="./arrow_diagram.js"></script>
-    <script src="./line_diagram.js"></script>
-    <script src="./school_holiday.js"></script>
-    <script src="./holiday_calendar.js"></script>
+    <!-- ibanking-->
     <script src="./ibanking.js"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
