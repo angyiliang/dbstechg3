@@ -1,0 +1,18 @@
+[
+    {
+        "messageId": 20001,
+        "dateCreated": "2019-01-26T07:15:00.000+0000",
+        "topic": "Credit Cards",
+        "subject": "Cancel Card",
+        "body": "Hi, I would like to cancel my cc XXXX-XXXX-XXXX-3123. Thanks, Hui Shan.",
+        "isRead": true
+    },
+    {
+        "messageId": 20003,
+        "dateCreated": "2019-01-30T01:12:00.000+0000",
+        "topic": "Credit Cards",
+        "subject": "Cancel Card",
+        "body": "Dear Ms Tan, your credit card ending with 3123 has successfully been cancelled.",
+        "isRead": false
+    }
+]

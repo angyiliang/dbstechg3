@@ -51,15 +51,15 @@
     <!-- /.row -->
     <!-- /#wrapper -->
 
-
-    <div id="showSummary">
-        <h3>Summary</h3>
-        <div class="panel panel-default">
+    <div class="panel panel-default">
             <div class="panel-body" id="marketmsg">
                 Marketing Messages
             </div>
 
         </div>
+    <div id="showSummary">
+        <h3>SUMMARY</h3>
+        
         <div class="panel panel-default">
             <div class="panel-body">
                 <centre>
@@ -71,7 +71,7 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-body" id="summaryTable">
-                <table>
+                <table class=table id="summaryTable">
                     <tr>
                         <th>Date</th>
                         <th>Transaction Type</th>
@@ -85,14 +85,17 @@
 
 
     <div id="showSavings" style="display: none;">
-        <h3>Savings</h3>
+        <h3>SAVING</h3>
+
         <div class="panel panel-default">
-            <div class="panel-body" id="marketmsg">
-                Marketing Messages
+                <div class="panel-body">
+                    <centre>
+                        <h1>Savings account number: </h1> <h1 id="savingAccount"></h1>
+                        <br>
+                        <h1>Available Balance:</h1><h1 id="balance"></h1>
+                    </centre>
+                </div>
             </div>
-
-        </div>
-
         <div id="savingsTable">
             
         </div>
@@ -100,6 +103,7 @@
     </div>
 
     <div id="showCredit" style="display: none;">
+            <h3>CREDIT</h3>
         <p></p>
         <table class="tg">
             <tr>
@@ -118,6 +122,7 @@
     </div>
 
     <div id="showHistory" style="display: none;">
+            <h3>HISTORY</h3>
         <p>Account:
             <select id="myList">
                 <option value="1">one</option>
@@ -506,12 +511,10 @@
         </div>
 
 
-
-
     </div>
 
     <div id="showInbox" style="display: none;" s>
-        inbox
+            <h3>INBOX</h3>
     </div>
 
     <!--required scripts-->
